@@ -3,6 +3,7 @@ import 'package:crypto_app/model/coin/coin_model.dart';
 import 'package:http/http.dart' as http;
 
 class CoinService {
+  //Take data from API
   Future<List<CoinModel>> getCoinMarket() async {
     try {
       final response = await http.get(
